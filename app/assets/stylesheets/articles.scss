@@ -1,0 +1,56 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Basics //
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.layout {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 34px;
+  font-weight: bold;
+  width: 189px;
+  color: rgba(0, 0, 0, 0.2)
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.article {
+  width: 280px;
+  height: 350px;
+  background-color: white;
+  padding: 25px;
+  margin: 20px 10px;
+  h2 {
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .main-btn {
+    margin: 20px auto;
+  }
+}
+
+.article-text {
+  height: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
